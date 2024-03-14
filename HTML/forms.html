@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Forms</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <form action="post">
+        <div>
+            <label for="username">Username: </label>
+            <input required id="username" type="text" placeholder="Enter username">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input id = "password" value ="abcdefgh" type="password" placeholder="Password">
+        </div>
+        <div>
+            Gender: 
+            <input checked name = "gender" id= "male" type="radio">
+            <label for="male">Male</label>
+            <input name = "gender" id= "female" type="radio">
+            <label for="female">Female</label>
+            <input name = "gender" id= "other" type="radio">
+            <label for="other">Others</label>
+        </div>
+        <div>
+            Languages: 
+            <input checked type="checkbox" name="languages" id="C++">
+            <label for="C++">C++</label>
+            <input type="checkbox" name="languages" id="Java">
+            <label for="Java">Java</label>
+            <input type="checkbox" name="languages" id="Python">
+            <label for="Python">Python</label>
+            <input type="checkbox" checked name="languages" id="JavaScript">
+            <label for="JavaScript" >JavaScript</label>
+        </div>
+        <div>
+            Color: <br>
+            <label for="color1">set first color for your theme:</label>
+            <input type="color" name="color" id="color1" value="#654322"><br>
+            <label for="color2">Set second color for your theme: </label>
+            <input type="color" name="color" id="color2">
+        </div>
+        <div>
+            <label for="DOB">Date of birth: </label>
+            <input type="date" name="date" id="DOB" value="2004-03-04"> <br>
+            
+            <label for="DOA">Date of appointment: </label>
+            <input type="date" name="date" id="DOA" value="2023-08-14"> <br>
+        </div>
+        <div>
+            <label for="email">Enter Email: </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="feedback">Feedback:</label><br>
+            <textarea autofocus name="comment" id="feedback" cols="59" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="file">Upload file: </label>
+            <input required type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="subject">Choose your favourite subject: </label>
+            <select name="subject" id="subject">
+                <option value="Hindi">Hindi</option>    
+                <option value="English">English</option>    
+                <option value="Maths">Maths</option>    
+                <option value="Science">Science</option>    
+            </select>
+        </div>
+        <div>
+            <label for="hide">hidden input</label>
+            <input id = "hide" type="hidden" name="hidden">
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset the form">
+        </div>
+    </form>
+</body>
+</html>
